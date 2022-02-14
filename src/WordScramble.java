@@ -15,7 +15,17 @@ public class WordScramble
      */
     public static String scrambleWord(String word)
     {
-        /* to be implemented in part (a) */
+
+        String hi;
+        String temp;
+        for (int i = 0; i < word.length(); i++)
+        {
+            if (word.substring(i, i + 1).equals("A") && !word.substring(i + 1, i + 2).equals("A"))
+            {
+                temp = word.substring(i, i + 1);
+                hi += 
+            }
+        }
     }
 
     /** Modifies wordList by replacing each word with its scrambled
@@ -30,8 +40,8 @@ public class WordScramble
      *  - the relative ordering of the entries in wordList is the same as it was
      *    before the method was called
      */
-    public static void scrambleOrRemove(ArrayList<String> wordList)
-    {
+    //public static void scrambleOrRemove(ArrayList<String> wordList)
+    //{
         /* to be implemented in part (b) */
-    }
+    //}
 }
